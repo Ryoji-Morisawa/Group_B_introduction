@@ -71,3 +71,16 @@ footer {
     font-size: 1rem;
     border-top: 3px solid #3498db;
 }
+/* 著作権情報のスタイル */
+footer .copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* 写真のスタイル */
+img {
+    border-radius: 10px; /* 四角い角を少し丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+    max-width: 250px; /* 写真を元のサイズに戻す */
+}
