@@ -18,6 +18,16 @@ h1 {
     z-index: 100;
 }
 
+h1 a {
+    color: #ffd166 !important;
+    text-decoration: underline !important;
+    transition: color 0.2s;
+}
+
+h1 a:hover {
+    color: #ff6f61 !important;
+}
+
 h2 {
     color: #457b9d;
     border-left: 6px solid #a8dadc;
