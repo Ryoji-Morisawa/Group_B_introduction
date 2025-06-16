@@ -1,12 +1,44 @@
 body {
-    font-family: sans-serif;
-    margin: 40px;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* モダンなフォントに変更 */
+    margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f8f9fa; /* 明るい背景色 */
+    color: #343a40; /* 濃いグレーのテキスト */
+    line-height: 1.7; /* 行間を少し広げる */
+}
+
+.container { /* コンテンツを中央揃えにし、最大幅を設定 */
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto; /* 上下にマージン、左右は自動で中央揃え */
+    padding: 30px;
+    background-color: #ffffff; /* コンテンツ背景は白 */
+    border-radius: 8px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*  subtle shadow */
+}
+
+h1 {
+    color: #007bff; /* プライマリカラーで見出しを強調 */
+    text-align: center; /* 中央揃え */
+    margin-bottom: 30px; /* 見出し下のマージン */
+    font-size: 2.5em; /* フォントサイズ調整 */
+}
+
+h2 {
+    color: #17a2b8; /* セカンダリカラー */
+    border-bottom: 2px solid #17a2b8; /* 下線を追加 */
+    padding-bottom: 10px; /* 下線とのスペース */
+    margin-top: 40px; /* セクション間のスペース */
+    margin-bottom: 20px;
+    font-size: 1.8em;
 }
 
 p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+    margin-bottom: 20px; /* 段落下のマージン */
+    font-size: 1.1em; /* 少し大きめのフォント */
+    color: #555; /* やや薄めのテキストカラー */
 }
+
+/* Bootstrapのスタイルを上書きまたは補完する場合は、
+   Bootstrapのlinkタグの後にこのstyle.cssのlinkタグを配置してください。
+   現在のHTMLでは既にそうなっています。 */
