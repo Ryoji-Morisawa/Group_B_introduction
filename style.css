@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
