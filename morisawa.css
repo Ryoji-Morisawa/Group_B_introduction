@@ -42,6 +42,16 @@ p {
     margin: 8px 24px;
 }
 
+h3 + p,
+h3 + ul {
+    display: none;
+}
+
+h3:hover + p,
+h3:hover + ul {
+    display: block;
+}
+
 @media (min-width: 600px) {
     body {
         max-width: 1200px;
