@@ -9,29 +9,33 @@
 </head>
 <body>
     <div class="container mt-5">
-        
-        <h1 class="text-center">自己紹介</h1>
-        <div class="card mt-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="text-center flex-grow-1">自己紹介</h1>
+            <!-- ボタンを追加 -->
+            <a href="#basic-info" class="btn scroll-link">基本情報</a>
+            <a href="#hobbies" class="btn scroll-link">趣味</a>
+            <a href="#personality" class="btn scroll-link">性格</a>
+        </div>
+        <div id="basic-info" class="card mt-4">
             <div class="card-body">
                 <h2 class="card-title">基本情報</h2>
                 <p><strong>名前:</strong> 中村京平</p>
                 <p><strong>出身:</strong> 神奈川県横須賀市</p>
                 <p><strong>部署:</strong> アセット開発センター</p>
                 <p><strong>仕事:</strong> デジタルサービス開発</p>
-                <!-- <button type="button" class="btn btn-primary">Primary</button> -->
             </div>
         </div>
-        <div class="card mt-4">
+        <div id="hobbies" class="card mt-4">
             <div class="card-body">
                 <h2 class="card-title">趣味</h2>
                 <ul>
-                    <li>野球観戦: プロ野球が好きで、Denaを応援しています。</li>
+                    <li>野球観戦: プロ野球が好きで、<a href="https://www.baystars.co.jp/" target="_blank" rel="noopener noreferrer">Dena</a>を応援しています。</li>
                     <li>ゲーム: FPSが好きで、スプラトゥーンをやっています。</li>
                     <li>YouTubeを見ること: ゲーム実況が好きです。</li>
                 </ul>
             </div>
         </div>
-        <div class="card mt-4">
+        <div id="personality" class="card mt-4">
             <div class="card-body">
                 <h2 class="card-title">性格</h2>
                 <p>几帳面</p>
@@ -42,5 +46,16 @@
         <p>© 2025 Kyohei Nakamura. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // スムーズスクロールの実装
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 </html>
