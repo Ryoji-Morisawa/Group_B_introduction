@@ -13,6 +13,7 @@ h1 {
     /* text-align: center; */ */
     margin-bottom: 30px;
     font-size: 2.5rem;
+    padding-left:250px;
 }
 
 h2 {
@@ -59,6 +60,7 @@ p strong {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    padding-left: 60px; /* 左側にさらに余白を追加 */
 }
 
 /* フッターのスタイル */
@@ -76,4 +78,23 @@ footer .copyright {
     margin-top: 10px;
     font-size: 0.9rem;
     color: #ccc;
+}
+
+/* ボタンのスタイル */
+.btn {
+    border: 2px solid #ddd; /* 枠線を薄いグレーに変更 */
+    background: linear-gradient(135deg, #ffffff, #f9f9f9); /* グラデーション背景を白系に変更 */
+    color: #333; /* 黒の文字色 */
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px; /* 丸みを強調 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease; /* ホバー時のアニメーション */
+}
+
+/* ボタンのホバー効果 */
+.btn:hover {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* ホバー時に濃いグレーのグラデーション */
+    color: #000; /* 文字色を黒に変更 */
+    transform: translateY(-2px); /* ホバー時に少し浮かせる */
 }
