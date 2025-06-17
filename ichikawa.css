@@ -1,0 +1,39 @@
+body {
+    background-color: #f8f9fa; /* 落ち着いた背景色 */
+    font-family: 'Arial', sans-serif; /* モダンなフォント */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h4, h3, h6 {
+    color: #343a40; /* テキストカラーを濃いグレーに */
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: #ffffff; /* 背景を白に */
+    border-radius: 10px; /* 角を丸く */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 画像にシャドウを追加 */
+    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+}
+
+.nav-tabs .nav-link {
+    color: #495057; /* タブの文字色 */
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff; /* アクティブタブの背景色 */
+    color: #ffffff; /* アクティブタブの文字色 */
+}
+
+.lead {
+    font-size: 1.2rem; /* テキストサイズを調整 */
+    line-height: 1.6; /* 行間を広げる */
+}
