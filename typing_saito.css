@@ -1,0 +1,118 @@
+/* ── 全体リセット ── */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  
+  /* ── 背景 & フォント ── */
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* ── ゲームカード ── */
+  #game {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    width: 320px;
+    max-width: 90%;
+  }
+  
+  /* ── 単語表示 ── */
+  #word {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* ── 入力欄 ── */
+  #input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease;
+  }
+  #input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(255,255,255,0.6);
+  }
+  
+  /* ── ステータス表示 ── */
+  #stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* ── タイマー・バー ── */
+  .timer-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  .timer-fill {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: width 1s linear;
+  }
+  
+  /* ── ボタン ── */
+  #startBtn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    background: #2575fc;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  #startBtn:hover:not(:disabled) {
+    background: #6a11cb;
+    transform: scale(1.02);
+  }
+  #startBtn:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  
+  /* ── 正誤ハイライト ── */
+  .correct { color: #57e32c; }
+  .incorrect {
+    color: #ff3860;
+    animation: shake 0.3s ease;
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20%,60% { transform: translateX(-3px); }
+    40%,80% { transform: translateX(3px); }
+  }
+  
+  /* ── ゲームオーバー演出 ── */
+  .game-over {
+    animation: pop 0.6s ease forwards;
+  }
+  @keyframes pop {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
