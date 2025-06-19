@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Typing Game</title>
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="typing_saito.css" />
+  </head>
+  <body>
+    <h1>タイピングゲーム</h1>
+    <div id="game">
+      <div id="word">―――――</div>
+      <input
+        id="input"
+        type="text"
+        placeholder="ここにタイプ"
+        disabled
+        autocomplete="off"
+      />
+      <div id="stats">
+        <div>スコア: <span id="score">0</span></div>
+        <div>残り時間: <span id="time">30</span>s</div>
+      </div>
+      <!-- タイマー・バー -->
+      <div class="timer-bar">
+        <div class="timer-fill"></div>
+      </div>
+      <button id="startBtn">ゲームスタート</button>
+    </div>
+
+    <!-- スクリプトはbodyの最後に -->
+    <script src="typing_saito.js"></script>
+  </body>
+</html>
