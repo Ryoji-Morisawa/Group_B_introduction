@@ -18,7 +18,7 @@ for (let i = 1; i <= 151; i++) {
     button.innerText = '鳴き声を聞く';
     button.addEventListener('click', () => {
         const audio = new Audio(`${baseURL_voice}${i}.ogg`);
-        audio.volume = 0.5; // 音量を50%に設定
+        audio.volume = 0.2; // 音量を50%に設定
         audio.play();
     });
 
